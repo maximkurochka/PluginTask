@@ -6,7 +6,4 @@
 #define STRINGCONTENT_API __declspec(dllexport)
 #endif
 
-extern "C" STRINGCONTENT_API bool DoSomething(
-	const char* sentence,
-	const char* subsentence
-);
+extern "C" STRINGCONTENT_API void OpenMessageBox(const char* text);

@@ -1,13 +1,7 @@
 #include "pch.h"
 #include "StringContent.h"
 
-bool DoSomething(
-	const char* sentence,
-	const char* subsentence
-)
+void OpenMessageBox(const char* text)
 {
-	std::string sent(sentence);
-	std::string subsent(subsentence);
-
-	return sent.find(subsent) != std::string::npos;
+	MessageBoxA(0, text, (LPCSTR)"StringContent.dll", MB_OK | MB_ICONINFORMATION);
 }

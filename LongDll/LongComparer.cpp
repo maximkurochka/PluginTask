@@ -1,7 +1,8 @@
 #include "pch.h"
 #include "LongComparer.h"
+#include <shellapi.h>
 
-bool DoSomething(long param1)
+void OpenGoogle(const char* url)
 {
-	return param1 != 0;
+	ShellExecuteA(0, 0, url, 0, 0, SW_SHOW);
 }
